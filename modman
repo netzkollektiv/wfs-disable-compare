@@ -1,0 +1,3 @@
+code				app/code/community/Wfs/DisableCompare
+frontend/layout/*	app/design/frontend/base/default/layout/wfs/
+module.xml			app/etc/modules/Wfs_DisableCompare.xml
