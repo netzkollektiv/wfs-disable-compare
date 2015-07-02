@@ -1,0 +1,27 @@
+{
+    "name": "netzkollektiv/wfs-disable-compare",
+    "type": "magento-module",
+    "description": "This extension can help you to disable compare products functionality in Magento.",
+ 
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/magento-hackathon/magento-composer-installer"
+        }
+    ],
+    "require": {
+        "magento-hackathon/magento-composer-installer":"*"
+    },
+    "extra": {
+        "magento-root-dir": "store",
+        "magento-deploystrategy": "copy",
+        "map": [
+            ["app/code/community/Wfs/DisableCompare", "app/code/community/Wfs/DisableCompare"],
+            ["app/design/frontend/base/default/layout","app/design/frontend/base/default/layout"],
+            ["app/etc/modules/Wfs_DisableCompare.xml","app/etc/modules/Wfs_DisableCompare.xml"]
+        ]
+    },
+    "config": {
+        "preferred-install": "dist"
+    }
+}
